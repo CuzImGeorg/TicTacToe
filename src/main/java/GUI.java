@@ -46,14 +46,6 @@ public class GUI extends JPanel implements ActionListener {
         logic.toggleTurn(player1, player2);
         logic.toggleTurn(player1, player2);
 
-
-//        for(JButton b : ja) {
-//            b = new JButton();
-//            b.setBackground(Color.darkGray);
-//            b.addActionListener(this);
-//            add(b);
-//        }
-
         for (int i = 0; i < 9; i++) {
             ja[i] = new JButton();
             ja[i].setBackground(Color.darkGray);
