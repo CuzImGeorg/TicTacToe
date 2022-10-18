@@ -34,15 +34,11 @@ public class GUI extends JPanel implements ActionListener {
         player2.setBounds(200,10 ,50 ,90);
         player2.setBorder(new LineBorder(Color.darkGray, 2));
 
-        time.setText("Time:");
-        player2.setBorder(new LineBorder(Color.black, 2));
-        player2.setBorder(new LineBorder(Color.darkGray, 2));
-
         restart.setBackground(Color.cyan);
         restart.setText("restart");
         restart.setBounds(250,250,250,250);
         restart.addActionListener(this);
-        
+
         add(player1);
         add(time);
         add(player2);
