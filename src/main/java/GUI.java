@@ -42,18 +42,7 @@ public class GUI extends JPanel implements ActionListener {
         restart.setText("restart");
         restart.setBounds(250,250,250,250);
         restart.addActionListener(this);
-
-        player1Wins.setText("Spieler 1 Wins: " + p1Win);
-        player1Wins.setBounds(200,10 ,50 ,90);
-        player1Wins.setBorder(new LineBorder(Color.darkGray, 2));
-
-        player2Wins.setText("Spieler 2 Wins:" + p2Win);
-        player2Wins.setBounds(200,10 ,50 ,90);
-        player2Wins.setBorder(new LineBorder(Color.darkGray, 2));
-
-
-
-
+        
         add(player1);
         add(time);
         add(player2);
@@ -89,10 +78,8 @@ public class GUI extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         JButton jb = (JButton) e.getSource();
         boolean b = logic.onClick(jb);
-        if(b) logic.toggleTurn(player1, player2);
+        if (b) logic.toggleTurn(player1, player2);
         logic.checkIfWon(ja);
-
-
 
     }
 }

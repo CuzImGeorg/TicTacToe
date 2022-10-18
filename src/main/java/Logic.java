@@ -62,6 +62,7 @@ public class Logic {
         if(!ja[2].getBackground().equals(Color.darkGray) && ja[2].getBackground() == ja[4].getBackground() && ja[2].getBackground() == ja[6].getBackground()) won = true;
 
 
+
       return won;
 
 
